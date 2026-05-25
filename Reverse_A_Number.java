@@ -1,9 +1,6 @@
-import java.util.Scanner;
 class Solution{
     public static void main(String... args){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(args[0]);
         Solution obj = new Solution();
         System.out.println(obj.reverse(n));
     }

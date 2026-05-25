@@ -1,4 +1,3 @@
-import java.util.Scanner;
 class Solution{
     public boolean isPalindrome(int x){
         if(x < 0) return false;
@@ -13,10 +12,8 @@ class Solution{
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         Solution obj = new Solution();
-        System.out.print("Enter your number: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(args[0]);
         System.out.println(obj.isPalindrome(n));
     }
 }

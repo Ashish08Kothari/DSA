@@ -12,9 +12,9 @@ class Solution {
             if (num == target)
                 return mid;
             else if (num < target)
-                s++;
+                s = m+1;
             else 
-                e--;
+                e = m-1;
         }
 
         return -1;

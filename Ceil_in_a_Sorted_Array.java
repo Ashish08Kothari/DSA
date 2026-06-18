@@ -11,11 +11,11 @@ class Solution {
             int m = s + (e-s) / 2;
             if (arr[m] >= x) {
                 ans = m;
-                e--;
+                e = m-1;
             }
 
             else
-                s++;
+                s = m+1;
         }
 
         return ans;

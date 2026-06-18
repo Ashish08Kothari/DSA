@@ -10,9 +10,9 @@ class Solution {
         while (s <= e) {
             int m = s + (e-s) / 2;
             if(arr[m] <= target)
-                s++;
+                s = m+1;
             else 
-                e--;
+                e = m-1;
         }
 
         return s;

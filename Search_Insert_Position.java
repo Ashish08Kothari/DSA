@@ -13,10 +13,10 @@ class Solution {
                 return m;
 
             else if(arr[m] < target)
-                s++;
+                s = m+1;
 
             else
-                e--;
+                e = m-1;
         }
 
         return s;

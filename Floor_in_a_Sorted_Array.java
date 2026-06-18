@@ -6,10 +6,10 @@ class Solution {
             int m = s + (e-s) / 2;
             if(arr[m] <= x) {
                 ans = m;
-                s++;
+                s = m+1;
             }
             else {
-                e--;
+                e = m-1;
             }
         }
 
